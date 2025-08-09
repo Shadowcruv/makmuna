@@ -1,0 +1,32 @@
+.page-selection-box{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.page-num-box{
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid #bd60a6; */
+    color: #000000;
+}
+
+.page-svg-box{
+  height: 24px;
+}
+
+.page-svg-box:hover,
+.page-num-box:hover {
+  background-color: rgba(173, 10, 92, 0.1);
+  cursor: pointer;
+}
+
+/* Click effect: pressed movement */
+.page-num-box:active, .page-svg-box:active {
+  transform: scale(0.97);
+  background-color: rgba(97, 5, 51, 0.2);
+}

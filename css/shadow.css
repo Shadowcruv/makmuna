@@ -1,0 +1,104 @@
+.fade-in-right {
+  animation: fade-in-right 2s ease;
+  animation-play-state: paused;
+}
+
+.fade-in-up {
+  animation: fade-in-up 5s ease;
+  animation-play-state: paused;
+}
+
+.animated {
+  animation-play-state: running;
+}
+
+@keyframes fade-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.bradcam_area.shad {
+    background-size: cover;
+    background-position: center center;
+    padding: 100px 0 10px 0;
+}
+
+.page-decider{
+  display: flex;
+  justify-content: center;
+
+}
+
+.page-previous {
+  width: 16px;
+}
+
+.page-next{
+  width: 25px;
+}
+
+.page-input {
+  padding: 10px 20px;
+}
+
+.products-grid {
+  display: grid;
+
+  /* - In CSS Grid, 1fr means a column will take up the
+       remaining space in the grid.
+     - If we write 1fr 1fr ... 1fr; 8 times, this will
+       divide the grid into 8 columns, each taking up an
+       equal amount of the space.
+     - repeat(8, 1fr); is a shortcut for repeating "1fr"
+       8 times (instead of typing out "1fr" 8 times).
+       repeat(...) is a special property that works with
+       display: grid; */
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.logo-shad{
+  width: 50%;
+}
+
+
+.category-con-shad {
+  display: flex;
+  gap: 30px; /* spacing between images */
+  overflow-x: auto; /* allow horizontal scroll */
+  padding: 10px;
+  scrollbar-width: none;       /* Firefox */
+  -ms-overflow-style: none;    /* IE and Edge */
+}
+
+.category-con-shad::-webkit-scrollbar {
+  display: none;
+}
+
+.categories-shad {
+  border: 4px solid #DC2DEB;
+  width: 100px;
+  height: 100px; /* optional to enforce square shape */
+  border-radius: 50%;
+  flex-shrink: 0; /* prevent shrinking so all images stay same size */
+}
+
+.category-con-shad:hover {
+  scroll-behavior: auto; /* prevent jumpiness while paused */
+}
