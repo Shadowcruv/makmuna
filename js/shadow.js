@@ -183,3 +183,23 @@ container.addEventListener('mouseleave', () => scrollSpeed = 2);
 // });
 
 
+//when button is clicked  it scrolls to the page in view
+document.getElementById('scrollToAppointmentBtn1').addEventListener('click', 
+  function() {
+    document.getElementById('appointmentSection').scrollIntoView({ behavior: 'smooth' });
+  }
+);
+
+document.getElementById('scrollToAppointmentBtn2').addEventListener('click', 
+  function() {
+    document.getElementById('appointmentSection').scrollIntoView({ behavior: 'smooth' });
+  }
+);
+
+document.getElementById('scrollToAppointmentBtn3').addEventListener('click', 
+  function() {
+    document.getElementById('appointmentSection').scrollIntoView({ behavior: 'smooth' });
+  }
+);
+
+
