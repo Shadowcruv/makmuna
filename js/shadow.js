@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
         splash.style.display = "none";
         main.style.display = "block";
       }, 600); // Match fade-out duration
-    }, 12500); // Keep splash visible for a moment
+    }, 3000); // Keep splash visible for a moment
   });
 });
 
