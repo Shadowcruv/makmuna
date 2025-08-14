@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Makmuna</title>
+    <title>Makkmuna</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -111,7 +111,7 @@
                         <div class="row">
                             <div class="col-lg-6 col-md-8">
                                 <div class="slider_text">
-                                    <h3>Makmuna: 
+                                    <h3>Makkmuna: 
                                         Unlock Your Natural Glow</h3>
                                     <p>From toners to serums e.t.c, our skin care range is designed to pamper and protect your skin, addressing specific concerns like dryness, acne and aging.</p>
                                     <button id="scrollToAppointmentBtn1" class="boxed-btn3 shad-link">Appointment</button>
@@ -125,7 +125,7 @@
                         <div class="row">
                             <div class="col-lg-6 col-md-8">
                                 <div class="slider_text">
-                                    <h3>Makmuna: Skin Care that Cares</h3>
+                                    <h3>Makkmuna: Skin Care that Cares</h3>
                                     <p>Indulge in our luxirious range of toners, face creams, body creams, and serums, designed to nourish, hydrate, and protect your skin.</p>
                                     <button id="scrollToAppointmentBtn2" class="boxed-btn3 shad-link">Appointment</button>
                                 </div>
@@ -138,7 +138,7 @@
                         <div class="row">
                             <div class="col-lg-6 col-md-8">
                                 <div class="slider_text">
-                                    <h3>Makmuna: Beautiful Skin, Naturally</h3>
+                                    <h3>Makkmuna: Beautiful Skin, Naturally</h3>
                                     <p>Our carefully crafted range includes toners, face creams, body creams, and serums that work in harmony to nourish, hydrate, and protect your skin.</p>
                                     <button id="scrollToAppointmentBtn3" class="boxed-btn3 shad-link">Appointment</button>
                                 </div>
@@ -245,7 +245,7 @@
                 <div class="row">
                     <div class="col-xl-6 col-md-6">
                         <div class="section_title mb-55">
-                            <h3>Different Categories</h3>
+                            <h3>Categories</h3>
                             <p>We offer any product of your choice that makes your skin get pampered, ranging from toners, facewash, sunscreen, soaps, scrubs, mosturizers e.t.c</p>
                         </div>
                     </div>
@@ -257,16 +257,37 @@
                             <div class="">
                                 <div class="">
                                     <div class="">
-                                        <h4>Some categories below</h4>
+                                        <h4 class="category-name-shad">Some categories listed below</h4>
                                     </div>
-                                    <div class="category-con-shad" id="auto-scroll-container">
-                                        <img class="categories-shad" src="img/team/a.jpg" alt="">
-                                        <img class="categories-shad" src="img/team/b.jpg" alt="">
-                                        <img class="categories-shad" src="img/team/c.jpg" alt="">
-                                        <img class="categories-shad" src="img/team/d.jpg" alt="">
-                                        <img class="categories-shad" src="img/team/e.jpg" alt="">
-                                        <img class="categories-shad" src="img/team/f.jpg" alt="">     
-                                        <img class="categories-shad" src="img/team/g.jpg" alt="">   
+                                    <div class="category-con-shad" id="auto-shad-scroll-container">
+                                        <div class="category-item">
+                                            <img class="categories-shad" src="img/team/a.jpg" alt="">
+                                            <p class="category-label">Toners</p>
+                                        </div>
+                                        <div class="category-item">
+                                            <img class="categories-shad" src="img/team/b.jpg" alt="">
+                                            <p class="category-label">Body wash</p>
+                                        </div>
+                                        <div class="category-item">
+                                            <img class="categories-shad" src="img/team/c.jpg" alt="">
+                                            <p class="category-label">Serum</p>
+                                        </div>
+                                        <div class="category-item">
+                                            <img class="categories-shad" src="img/team/d.jpg" alt="">
+                                            <p class="category-label">Cleansers</p>
+                                        </div>
+                                        <div class="category-item">
+                                            <img class="categories-shad" src="img/team/e.jpg" alt="">
+                                            <p class="category-label">Body lotions</p>
+                                        </div>
+                                        <div class="category-item">
+                                            <img class="categories-shad" src="img/team/f.jpg" alt="">
+                                            <p class="category-label">Mosturizers</p>
+                                        </div>
+                                        <div class="category-item">
+                                            <img class="categories-shad" src="img/team/g.jpg" alt="">
+                                            <p class="category-label">lots more</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -442,6 +463,10 @@
                                     <span>:  9.00am - 8.00pm</span>
                                 </p>
                                 <p class="d-flex justify-content-between">
+                                    <span>Thursday</span>
+                                    <span>:  10.00am - 8.00pm</span>
+                                </p>
+                                <p class="d-flex justify-content-between">
                                     <span>Saturdays</span>
                                     <span>:  10.00am - 8.00pm</span>
                                 </p>
@@ -557,6 +582,51 @@
          format: 'HH.MM'
      });
     </script>
+    <!-- <script src="https://unpkg.com/lenis@1.3.8/dist/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13/dist/gsap.min.js"></script>
+
+<script>
+const container = document.getElementById('auto-shad-scroll-container');
+
+// 1️⃣ Clone content for infinite loop illusion
+const items = [...container.children];
+items.forEach(item => {
+    const clone = item.cloneNode(true);
+    container.appendChild(clone);
+});
+
+// 2️⃣ Setup Lenis smooth scroll
+const lenis = new Lenis({
+    duration: 1.2, // smoothness
+    smoothWheel: true,
+    smoothTouch: true,
+    orientation: 'horizontal'
+});
+
+function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+}
+requestAnimationFrame(raf);
+
+// 3️⃣ GSAP loop to auto-scroll
+gsap.to(container, {
+    scrollLeft: container.scrollWidth / 2,
+    duration: 15, // speed
+    ease: "none",
+    repeat: -1, // infinite
+    modifiers: {
+        scrollLeft: (value) => {
+            // Reset to 0 when reaching half (because we cloned)
+            if (parseFloat(value) >= container.scrollWidth / 2) {
+                return 0;
+            }
+            return value;
+        }
+    }
+});
+</script> -->
+
 </body>
 
 </html>

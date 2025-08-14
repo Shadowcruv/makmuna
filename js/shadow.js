@@ -1,4 +1,40 @@
 
+
+
+// const container = document.getElementById('auto-shad-scroll-container');
+// const scrollSpeed = 2; // pixels per tick
+// let scrollInterval;
+
+// // Clone all children and append them to create the seamless loop
+// const items = [...container.children];
+// items.forEach(item => {
+//     const clone = item.cloneNode(true);
+//     container.appendChild(clone);
+// });
+
+// function startScrolling() {
+//     scrollInterval = setInterval(() => {
+//         container.scrollLeft += scrollSpeed;
+
+//         // When we've scrolled past the first set of items, reset
+//         if (container.scrollLeft >= container.scrollWidth / 2) {
+//             container.scrollLeft = 0;
+//         }
+//     }, 16); // ~60fps
+// }
+
+// function stopScrolling() {
+//     clearInterval(scrollInterval);
+// }
+
+// startScrolling();
+
+// // Pause scrolling on hover
+// container.addEventListener('mouseenter', stopScrolling);
+// container.addEventListener('mouseleave', startScrolling);
+
+
+
 //splash-screen js
 document.addEventListener("DOMContentLoaded", () => {
   const splash = document.getElementById("splash-screen");
@@ -12,9 +48,11 @@ document.addEventListener("DOMContentLoaded", () => {
         splash.style.display = "none";
         main.style.display = "block";
       }, 600); // Match fade-out duration
-    }, 3000); // Keep splash visible for a moment
+    }, 1500); // Keep splash visible for a moment
   });
 });
+
+
 
 
 
@@ -34,22 +72,22 @@ identity.innerHTML = `<div class="footer_top">
                             <div class="socail_links">
                                 <ul>
                                     <li>
-                                        <a href="#">
+                                        <a href="https://web.facebook.com/makmunacosmetics">
                                             <i class="ti-facebook"></i>
                                         </a>
                                     </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="ti-twitter-alt"></i>
-                                        </a>
+                                    <li> 
+                                        <a href="https://www.tiktok.com/@makkmunacosmetics"> 
+                                            <i class="fab fa-tiktok"></i> 
+                                        </a> 
+                                    </li> 
+                                    <li> 
+                                        <a href="https://wa.me/2348169227830"> 
+                                            <i class="fab fa-whatsapp"></i> 
+                                        </a> 
                                     </li>
                                     <li>
-                                        <a href="#">
-                                            <i class="fa fa-dribbble"></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
+                                        <a href="https://www.instagram.com/makkmunacosmetics">
                                             <i class="fa fa-instagram"></i>
                                         </a>
                                     </li>
@@ -87,9 +125,10 @@ identity.innerHTML = `<div class="footer_top">
                                 Follow Us
                             </h3>
                             <ul class="links">
-                                <li><a href="">FaceBook</a></li>
-                                <li><a href="">Instagram</a></li>
-                                <li><a href=""> Twitter</a></li>
+                                <li><a href="https://web.facebook.com/makmunacosmetics">FaceBook</a></li>
+                                <li><a href="https://www.tiktok.com/@makkmunacosmetics">Tiktok</a></li>
+                                <li><a href="https://wa.me/2348169227830">Whatsapp</a></li>
+                                <li><a href="https://www.instagram.com/makkmunacosmetics">Instagram</a></li>
                             </ul>
                         </div>
                     </div>
@@ -139,48 +178,6 @@ const observer = new IntersectionObserver(callback, options);
 const animatedElements = document.querySelectorAll(".animate");
 
 animatedElements.forEach(element => observer.observe(element));
-
-const container = document.getElementById("auto-scroll-container");
-
-  // Clone the images
-  const cloneItems = container.innerHTML;
-  console.log(`cloneItems : ${cloneItems}`)
-  container.innerHTML += cloneItems;
-  console.log(`container-innerHTML : ${container.innerHTML}`)
-
-  const originalContentWidth = container.scrollWidth / 2;
-  console.log(`originalContentWidth : ${originalContentWidth}`)
-
-  let scrollSpeed = 1.5;
-
-  function autoScroll() {
-    container.scrollLeft += scrollSpeed;
-
-    console.log(`container.scrollLeft : ${container.scrollLeft}`)
-
-    // Reset scroll to the original starting point
-    if (container.scrollLeft >= originalContentWidth) {
-      container.scrollLeft = 0;
-    }
-
-    requestAnimationFrame(autoScroll);
-  }
-
-  autoScroll();
-
-// Add pause on hover
-container.addEventListener('mouseenter', () => scrollSpeed = 0);
-container.addEventListener('mouseleave', () => scrollSpeed = 2);
-
-// // Initialize Lenis
-// const lenis = new Lenis({
-//   autoRaf: true,
-// });
-
-// // Listen for the scroll event and log the event data
-// lenis.on('scroll', (e) => {
-//   console.log(e);
-// });
 
 
 //when button is clicked  it scrolls to the page in view
