@@ -112,7 +112,7 @@ if(localStor && localStor != '5'){
                                         <h3>Makkmuna: 
                                             Unlock Your Natural Glow</h3>
                                         <p>From toners to serums e.t.c, our skin care range is designed to pamper and protect your skin, addressing specific concerns like dryness, acne and aging.</p>
-                                        <button id="scrollToAppointmentBtn1" class="boxed-btn3 shad-link">Appointment</button>
+                                        <button id="scrollToAppointmentBtn4" class="boxed-btn3 shad-link">Appointment</button>
                                     </div>
                                 </div>
                             </div>
@@ -425,7 +425,7 @@ if(localStor && localStor != '5'){
                     <div class="row">
                         <div class="col-lg-7">
                             <div class="appoint_ment_form pl-68">
-                                <form action="https://formsubmit.co/0f5aac5e98f1c85adf01eab1ada38283" method="POST">
+                                <form action="https://formsubmit.co/makmuna13@yahoo.com" method="POST">
                                     <div class="single_field">
                                         <input type="text" placeholder="Name" name="Name" required>
                                     </div>
@@ -488,7 +488,7 @@ if(localStor && localStor != '5'){
                     <div class="popup_box ">
                             <div class="popup_inner">
                                 <h3>Make an Appointment</h3>
-                                <form action="https://formsubmit.co/0f5aac5e98f1c85adf01eab1ada38283" method="POST">
+                                <form action="https://formsubmit.co/makmuna13@yahoo.com" method="POST">
                                     <div class="row">
                                         <div class="col-xl-6 col-md-6">
                                             <input id="datepicker" placeholder="Date">
@@ -1198,6 +1198,12 @@ document.getElementById('scrollToAppointmentBtn2').addEventListener('click',
 );
 
 document.getElementById('scrollToAppointmentBtn3').addEventListener('click', 
+  function() {
+    document.getElementById('appointmentSection').scrollIntoView({ behavior: 'smooth' });
+  }
+);
+
+document.getElementById('scrollToAppointmentBtn4').addEventListener('click', 
   function() {
     document.getElementById('appointmentSection').scrollIntoView({ behavior: 'smooth' });
   }
